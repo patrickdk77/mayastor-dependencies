@@ -33,6 +33,7 @@ service PoolRpc {
 enum PoolType {
   Lvs = 0;  // pool backed by spdk lvs
   Lvm = 1;  // pool backed by lvm vg
+  Zfs = 2;  // pool backed by a zfs dataset
 }
 
 // The wrapper for pooltype.
